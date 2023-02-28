@@ -11,6 +11,7 @@ body {
     margin: 0;
     padding: 0;
     color: #E90064;
+    width: 100%;
 }
 /* portfolio text */
 #portfolio{
@@ -73,14 +74,14 @@ nav ul li a {
     }
     .navbar {
         display: flex;
-        justify-content: flex-end;
+        justify-content: right;
     }
     
     .menu-btn {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        width: 30px;
+        width: 25px;
         height: 20px;
         cursor: pointer;
         z-index: 3;
@@ -426,14 +427,9 @@ header,.name-block{
         display: none;
     }
     .chat-box1{
-        display: flex;
+        display: inline;
         position: absolute;
-        bottom: 0;
-        width: fit-content;
-        height: fit-content;
-        align-items: center;
-        justify-content: center;
-        margin: 1.5em;
+        margin: 1em;
     }
 }
 @media (min-width:1024px) {
