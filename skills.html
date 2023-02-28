@@ -11,30 +11,55 @@
     
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/736567be33.js" crossorigin="anonymous"></script>
-    <!-- java script -->
-	<script src="index.js"></script>
-    <link rel="stylesheet" href="skills.css">
-    <title>Skills</title>
+    <link rel="stylesheet" href="skils1.css">
+    <title>Sathvik > Skills</title>
 </head>
 <body>
     <header>
-		<nav>
-			<h1 id="portfolio">My Portfolio</h1>
-			<ul>
-				<li><a class="nav-elements" href="index.html">Home</a></li>
-				<li><a class="nav-elements" href="skills.html">Skills</a></li>
-				<li><a class="nav-elements" href="certificates.html">Certificates</a></li>
-				<li><a class="nav-elements" href="projects.html">Projects</a></li>
-				<li><a class="nav-elements" href="about.html">About</a></li>
-			</ul>
-		</nav>
-	</header>
-	<div class="social-media">
-		<div class="social-child"><a href="#"><i class="fa-brands fa-square-instagram icon fa-3x"></i></a></div>
-		<div class="social-child"><a href="#"><i class="fa-brands fa-linkedin icon fa-3x"></i></a></div>
-		<div class="social-child"><a href="#"><i class="fa-brands fa-github icon fa-3x"></i></a></div>
-		<div class="social-child"><a href="#"><i class="fa-solid fa-envelope icon fa-3x"></i></a></div>
-    </div>
+        <nav>
+            <h1 id="portfolio">My Portfolio</h1>
+            <ul>
+                <li><a class="nav-elements" href="index.html">Home</a></li>
+                <li><a class="nav-elements" href="skills.html">Skills</a></li>
+                <li><a class="nav-elements" href="certificates.html">Certificates</a></li>
+                <li><a class="nav-elements" href="projects.html">Projects</a></li>
+                <li><a class="nav-elements" href="about.html">About</a></li>
+            </ul>
+            <nav-mini>
+                <div class="navbar">
+                    <div class="menu-btn">
+                      <div class="btn-line"></div>
+                      <div class="btn-line"></div>
+                      <div class="btn-line"></div>
+                    </div>
+                </div>   
+                <div id="mini-nav">
+                    <div class="mini-nav-child">
+                        <a class="nav-elements-mini" href="index.html">Home</a>
+                    </div>
+                    <div class="mini-nav-child">
+                        <a class="nav-elements-mini" href="skills.html">Skills</a>
+                    </div>
+                    <div class="mini-nav-child">
+                        <a class="nav-elements-mini" href="certificates.html">Certificates</a>
+                    </div>
+                    <div class="mini-nav-child">
+                        <a class="nav-elements-mini" href="projects.html">Projects</a>
+                    </div>
+                    <div class="mini-nav-child">
+                        <a class="nav-elements-mini" href="about.html">About</a>
+                    </div>
+                    <div class="mini-nav-child">
+                        <div class="chat-box1">
+                            <div class="containes-chat-box">
+                                <a id="feedback-click1" href="#"><i class="fa-solid fa-comments chat-btn-fa"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav-mini>
+        </nav>
+    </header>
     <div class="chat-box">
         <div class="containes-chat-box">
             <a id="feedback-click" href="#"><i class="fa-solid fa-comments chat-btn-fa fa-2x"></i></a>
@@ -47,45 +72,54 @@
                 <!-- <h2 class="#feedback_heading">Feedback Form</h2> -->
             <!-- </centre> -->
             <form id="feedback-form" action="submit.php" method="POST">
-              <div class="form-group">
+                <div class="form-group">
                 <label for="name">Name</label>
                 <input type="text" id="name" name="name" required>
-              </div>
-              <div class="form-group">
+                </div>
+                <div class="form-group">
                 <label for="profession">Profession</label>
                 <input type="text" id="profession" name="profession" required>
-              </div>
-              <div class="form-group">
+                </div>
+                <div class="form-group">
                 <label for="workplace">Workplace/Study Place</label>
                 <input type="text" id="workplace" name="workplace" required>
-              </div>
-              <div class="form-group">
+                </div>
+                <div class="form-group">
                 <label for="email">Email</label>
                 <input type="email" id="email" name="email" required>
-              </div>
-              <div class="form-group">
+                </div>
+                <div class="form-group">
                 <label for="feedback">Feedback</label>
                 <textarea id="feedback" name="feedback" required></textarea>
-              </div>
-              <div class="form-group">
+                </div>
+                <div class="form-group">
                 <label for="rating">Rating</label>
                 <select id="rating" name="rating" required>
-                  <option value="">Select a rating</option>
-                  <option value="5">5 stars</option>
-                  <option value="4">4 stars</option>
-                  <option value="3">3 stars</option>
-                  <option value="2">2 stars</option>
-                  <option value="1">1 star</option>
+                    <option value="">Select a rating</option>
+                    <option value="5">5 stars</option>
+                    <option value="4">4 stars</option>
+                    <option value="3">3 stars</option>
+                    <option value="2">2 stars</option>
+                    <option value="1">1 star</option>
                 </select>
-              </div>
-              <centre>
-                  <button class="submit-btn" type="submit">Submit</button>
-              </centre>
+                </div>
+                <centre>
+                    <button class="submit-btn" type="submit">Submit</button>
+                </centre>
             </form>
             <div id="success-message">Thank you for your feedback!</div>
-          </div>		  
+            </div>		  
     </div>
-    <!-- <h1 id="skill-heading">Skills & Technologies</h1> -->
+    <div class="social-media">
+        <div class="social-child"><a target="_blank" href="https://www.instagram.com/svssathvik7/"><i class="fa-brands fa-square-instagram icon fa-3x"></i></a></div>
+        <div class="social-child"><a target="_blank" href="https://www.linkedin.com/in/sathvik-svs-a76596230/"><i class="fa-brands fa-linkedin icon fa-3x"></i></a></div>
+        <div class="social-child"><a target="_blank" href="https://github.com/sathvikcodes"><i class="fa-brands fa-github icon fa-3x"></i></a></div>
+        <div class="social-child"><a target="_blank" href="mailto:svssathvik77@gmail.com"><i class="fa-solid fa-envelope icon fa-3x"></i></a></div>
+    </div>
+    <button id="info" onclick="openpg()">i</button>
+    <div id="circle" onclick="closepg()">
+        <p class="aside blockquote">Black is beautiful🖤</p>
+    </div>
     <div class="skills-container row">
         <div class="skill-tab a">
             <img alt="c language" src="c.svg" class="skill-logo">
@@ -109,7 +143,7 @@
             <img alt="bootstrap" src="bootstrap.svg" class="skill-logo spl-logo-xl">
         </div>
         <div class="skill-tab h">
-            <img alt="javascript" src="javascript.svg" class="skill-logo">
+            <img alt="javascript" src="javascript.svg" class="skill-logo spl-mini-ver">
         </div>
         <div class="skill-tab i">
             <img alt="singing" src="singing.svg" class="skill-logo">
@@ -118,11 +152,8 @@
             <img alt="chess" src="chess-king.svg" class="skill-logo spl-logo-sm">
         </div>
     </div>
-    <button id="info" onclick="openpg()">i</button>
-    <div id="circle" onclick="closepg()">
-        <p class="aside blockquote">Black is beautiful🖤</p>
-    </div>
     <h6 class="copyright">&#169 2023 SVS SATHVIK, All rights reserved</h6>
+    <!-- java script -->
     <script src="index.js"></script>
 </body>
 </html>

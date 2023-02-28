@@ -11,8 +11,8 @@ body {
     margin: 0;
     padding: 0;
     color: #E90064;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
 }
 /* portfolio text */
 #portfolio{
@@ -272,143 +272,6 @@ nav ul li a {
     }
 }
 
-/* Name block */
-.name-block h2,h1{
-    font-family: 'Shantell Sans', cursive;
-}
-@media (min-width:1024px)
-{
-    .name-block{
-        left: 10%;
-    }
-    .name-block h1{
-        font-size: 5em;
-    }
-    .name-block{
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        width: fit-content;
-        height: fit-content;
-        margin: auto;
-    }
-}
-@media (max-width:1023px)
-{
-    .name-block{
-        left: 10%;
-        position: absolute;
-        top: 25%;
-        width: fit-content;
-        height: fit-content;
-    }
-    .name-block h1{
-        font-size: 3em;
-    }
-    .name-block h2{
-        font-size: 2em;
-    }
-}
-header,.name-block{
-    animation: load_animation 0.5s ease-out;
-}
-@keyframes load_animation {
-    0%{
-        transform: translateY(100px);
-    }
-    100%{
-        transform: translateY(0px);
-    }
-}
-
-/* Welcome text */
-.welcome-txt{
-    position: relative;
-    color: #fff;
-    font-weight: 500;
-    padding: 4%;
-    justify-content: left;
-}
-.welcome-txt {
-    position: relative;
-}
-.welcome {
-    overflow: auto;
-    box-shadow: 0 0 100px rgba(255, 96, 158, 0.8);
-}
-@media (max-width:1023px)
-{
-    .welcome{
-        height: 25%;
-        width: 50%;
-        background-color: #000;
-        opacity: 80%;
-        position: absolute;
-        top: 0;
-        bottom: 20%;
-        margin-left: auto;
-        margin-top: auto;
-        left: 0;
-        right: 10%;
-        border-radius: 10%;
-        text-align: center;
-    }
-    .welcome-txt{
-        font-size: 1em;
-    }
-}
-@media (min-width:1024px)
-{
-    .welcome{
-        height: 300px;
-        width: 300px;
-        background-color: #000;
-        opacity: 80%;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        margin-top: auto;
-        margin-bottom: auto;
-        margin-left: auto;
-        left: 0;
-        right: 15%;
-        border-radius: 10%;
-        text-align: center;
-    }
-}
-.welcome-txt {
-    overflow: hidden;
-    white-space: pre-line;
-    font-family: 'Shantell Sans', cursive;
-    animation: scroll 40s infinite;
-    margin-top: 20%;
-}
-@keyframes scroll {
-    0%{transform: translateY(0);}
-    10%{transform: translateY(-6%);}
-    20%{transform: translateY(-12%);}
-    30%{transform: translateY(-18%);}
-    40%{transform: translateY(-24%);}
-    50%{transform: translateY(-30%);}
-    60%{transform: translateY(-36%);}
-    70%{transform: translateY(-42%);}
-    80%{transform: translateY(-48%);}
-    90%{transform: translateY(-54%);}
-    99%{transform: translateY(-60%);}
-    100%{transform: translateY(100%);}
-}
-.welcome{
-    animation: load_animation2 0.5s ease-out;
-}
-@keyframes load_animation2 {
-    0%{
-        transform: translateX(100px);
-    }
-    100%{
-        transform: translateX(0);
-    }
-}
-
 /* Chat box */
 .chat-btn-fa{
     color: #fff;
@@ -567,4 +430,82 @@ label{
         display: none;
     }
 
+}
+
+/* Skills container */
+.skills-container{
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: flex;
+    align-items:center;
+    justify-content:space-evenly;
+    background-color: black;
+    opacity: 100%;
+    flex-wrap: wrap;
+    flex-basis: 25%;
+    overflow: auto;
+    justify-content: center;
+    border-radius: 2%;
+}
+.skill-logo{
+    width: fit-content;
+    position: relative;
+    margin: auto;
+}
+.spl-logo-xl{
+    max-width: 90%;
+}
+.spl-logo-xxl
+{
+    max-width: 78%;
+}
+.spl-logo-sm{
+    max-width: 100%;
+}
+.skill-tab{
+    display: flex;
+    width: 150px;
+    height: 150px;
+    background-color:#fff;
+    border-radius: 10%;
+    margin: 40px;
+}
+@media (max-width: 1023px) {
+    .skills-container{
+        height: 70%!important;
+    }
+    .skill-tab{
+        display: flex;
+        width: 75px;
+        height: 75px;
+        background-color: #fff;
+        border-radius: 10%;
+        margin: 20px;
+    }
+    .spl-mini-ver{
+        max-width: 75%;
+    }
+}
+.skill-tab :hover{
+    box-shadow: 0 0 100px rgba(255, 255, 255, 0.8);
+}
+.skills-container{
+    animation : slideright 1s ease-in-out;
+}
+@keyframes slideright {
+    0%{
+        transform: translateX(100px);
+    }
+    90%{
+        transform: translateX(-20px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
 }
