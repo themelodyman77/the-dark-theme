@@ -170,7 +170,7 @@ nav ul li a {
     left: 50%;
     align-items: center;
     justify-content: center;
-    position: fixed;
+    position: absolute;
     bottom: 0;
     right: 0;
     transform: translate(-50%,0);
