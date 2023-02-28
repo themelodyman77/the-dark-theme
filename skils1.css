@@ -75,7 +75,6 @@ nav ul li a {
     }
     .navbar {
         display: flex;
-        justify-content: right;
     }
     
     .menu-btn {
