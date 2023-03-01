@@ -1,7 +1,10 @@
 /* Importing font styles */
 @import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@500&display=swap');
-
+*{
+    box-sizing: border-box;
+    width: 100%;
+}
 /* Targeting full body */
 body {
     background-color: #000;
