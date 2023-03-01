@@ -43,7 +43,7 @@ body {
 position: absolute;
 display: flex;
 flex-direction: column;
-background-color: inherit;
+background-color: inherit;  /*kk */
 text-align: center;
 }
 
